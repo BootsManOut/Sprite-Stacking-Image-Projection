@@ -11,6 +11,8 @@ for y in range(height):
     # Open the model image of the sprite stack and access it's data:
     # Model image should have the same width as the original image:
     output_layer = Image.open("sprite stack model.png")
+    # Use "sprite stack model 2.png" to project unto a circle instead:
+    # output_layer = Image.open("sprite stack model 2.png")
     output_layer = output_layer.convert("RGBA")
     output_pixels = output_layer.load()
     output_size = output_width, output_height = output_layer.size
